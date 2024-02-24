@@ -4,6 +4,12 @@
 
 ## Getting Started
 
+依存ライブラリをインストール
+
+```bash
+bun i
+```
+
 Share EngineをチェックアウトしてAPIクライアントを生成
 
 ```bash
