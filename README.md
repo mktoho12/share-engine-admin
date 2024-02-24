@@ -4,10 +4,22 @@
 
 ## Getting Started
 
+```bash
+gh repo clone mktoho12/share-engine-admin
+cd share-engine-admin
+./init.sh
+```
+
 依存ライブラリをインストール
 
 ```bash
 bun i
+```
+
+pnpmのライブラリもないとorvalが動かないらしい。ひどい
+
+```bash
+pnpm i
 ```
 
 Share EngineをチェックアウトしてAPIクライアントを生成
