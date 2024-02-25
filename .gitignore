@@ -38,3 +38,4 @@ next-env.d.ts
 src/api/api.ts
 src/api/model
 .env
+pnpm-lock.yaml

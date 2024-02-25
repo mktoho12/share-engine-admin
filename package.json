@@ -8,10 +8,10 @@
     "start": "next start",
     "lint": "next lint",
     "api:update-submodule": "git submodule update --init --remote",
-    "api:gen-schema": "docker compose -f submodules/share-engine/backend/docker-compose.yml run api python app/generate-openapi.py",
+    "api:gen-schema": "docker compose -f submodules/share-engine/backend/docker-compose.yml --env-file api-gen.env run api python app/generate-openapi.py",
     "api:gen-client": "rm -rf src/api/{model,api.ts} && orval",
     "api:update": "bun api:update-submodule && bun api:gen-schema && bun api:gen-client",
-    "api:serve": "ORIGIN=http://localhost:3000 docker compose -f submodules/share-engine/backend/docker-compose.yml up",
+    "api:serve": "docker compose -f submodules/share-engine/backend/docker-compose.yml --env-file api-serve.env up",
     "api:serve:stop": "docker compose -f submodules/share-engine/backend/docker-compose.yml down"
   },
   "dependencies": {

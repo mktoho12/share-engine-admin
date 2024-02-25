@@ -1,4 +1,4 @@
 [submodule "share-engine"]
 	path = submodules/share-engine
 	url = https://github.com/EngineMaker/share-engine.git
-	branch = request/add-envvar-origin-api-server
+	branch = request/care-genschema
