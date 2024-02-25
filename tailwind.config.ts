@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         default: "#0d0c22",
-        primary: "#0d0c22",
+        primary: "#3C50E0",
       },
     },
     plugins: [],
