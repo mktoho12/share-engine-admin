@@ -21,7 +21,7 @@ AXIOS_INSTANCE_FOR_API.interceptors.request.use(
     }
 
     // 保存されているアクセストークンを取得
-    const accessToken: string | null = TokenStorage.getToken()
+    const accessToken = TokenStorage.getToken()
 
     // アクセストークンが存在しない場合はログインページへリダイレクト
     if (!accessToken) {
@@ -30,7 +30,7 @@ AXIOS_INSTANCE_FOR_API.interceptors.request.use(
 
     // アクセストークンを取得できている場合（ログイン後の場合）はヘッダーに追加
     if (accessToken) {
-      config.headers.set("Authorization", `Bearer ${accessToken!}`)
+      config.headers.set("Authorization", `Bearer ${accessToken.access_token}`)
     }
 
     return config
