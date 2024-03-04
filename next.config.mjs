@@ -8,6 +8,11 @@ const nextConfig = {
         port: "4566",
         pathname: "/shareengine-storage/**",
       },
+      {
+        protocol: "https",
+        hostname: "placehold.jp",
+        pathname: "/**",
+      },
     ],
   },
 }
